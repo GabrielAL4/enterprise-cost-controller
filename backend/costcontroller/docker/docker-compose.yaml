@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  db:
+    image: 'postgres:14.8'
+    restart: always
+    container_name: enterprise-db-container
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - JAVA_TOOL_OPTIONS -agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n
+    ports:
+      - 5432:5432

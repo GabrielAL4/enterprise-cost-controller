@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CostcontrollerApplication<costcontroller>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.enterprise.costcontroller.CostcontrollerApplication",
+            "projectName": "costcontroller",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+            
+        }
+    ]
+}
